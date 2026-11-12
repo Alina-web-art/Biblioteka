@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Библиотека — книги, читальный зал и мероприятия</title>
+<meta name="description" content="Городская библиотека: каталог книг, услуги, часы работы и контакты.">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="/">Библио<span>тека</span></a>
+  <nav><a href="#about">О нас</a><a href="#catalog">Каталог</a><a href="#services">Услуги</a><a href="#hours">Часы работы</a><a href="#contacts">Контакты</a></nav>
+</div></header>
+<main>
+  <div class="hero"><div class="wrap">
+    <h1>Место, где живут книги</h1>
+    <p>Тысячи изданий, тихий читальный зал, клубы по интересам и мероприятия для всей семьи. Запись бесплатная.</p>
+    <a class="btn" href="#catalog">Найти книгу</a><a class="btn alt" href="#contacts">Как записаться</a>
+  </div></div>
+
+  <section id="about"><div class="wrap two">
+    <div><h2>О библиотеке</h2><p class="lead">Мы открыты для всех, кто любит читать.</p></div>
+    <div><p>Наша библиотека — это современное культурное пространство. В фонде художественная, научная, детская и справочная литература, периодика и электронные ресурсы. Здесь можно взять книгу домой, поработать в читальном зале или прийти на встречу с автором.</p></div>
+  </div></section>
+
+  <section id="catalog"><div class="wrap">
+    <h2>Каталог</h2><p class="lead">Ищите по названию или автору и фильтруйте по жанру.</p>
+    <div class="search">
+      <input id="q" type="search" placeholder="Название или автор…" aria-label="Поиск по каталогу">
+      <select id="g" aria-label="Жанр"><option value="">Все жанры</option></select>
+    </div>
+    <div class="grid" id="books"></div>
+  </div></section>
+
+  <section id="services"><div class="wrap">
+    <h2>Услуги</h2><p class="lead">Всё, что нужно читателю.</p>
+    <div class="grid">
+      <div class="card"><h3>Абонемент</h3><p>Выдача книг на дом сроком до 30 дней с возможностью продления.</p></div>
+      <div class="card"><h3>Читальный зал</h3><p>Тихое пространство для работы, Wi‑Fi и доступ к справочным изданиям.</p></div>
+      <div class="card"><h3>Детский отдел</h3><p>Книги для детей, громкие чтения и творческие занятия.</p></div>
+      <div class="card"><h3>Мероприятия</h3><p>Встречи с авторами, книжные клубы, лекции и выставки.</p></div>
+    </div>
+  </div></section>
+
+  <section id="hours"><div class="wrap two">
+    <div><h2>Часы работы</h2><p class="lead">Последний четверг месяца — санитарный день.</p></div>
+    <table>
+      <tr><th>Пн — Пт</th><td>10:00 — 20:00</td></tr>
+      <tr><th>Суббота</th><td>10:00 — 18:00</td></tr>
+      <tr><th>Воскресенье</th><td>Выходной</td></tr>
+    </table>
+  </div></section>
+
+  <section id="contacts"><div class="wrap two">
+    <div><h2>Контакты</h2><p class="lead">Для записи возьмите с собой паспорт.</p></div>
+    <div>
+      <p><strong>Адрес:</strong> ул. Книжная, 1</p>
+      <p><strong>Телефон:</strong> +7 (000) 000-00-00</p>
+      <p><strong>Эл. почта:</strong> info@biblioteka.example</p>
+    </div>
+  </div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Библиотека. Все права защищены.</div></footer>
+<script src="/app.js"></script>
+</body>
+</html>
